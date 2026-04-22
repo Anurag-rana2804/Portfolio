@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anurag | Portfolio</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <h2>Anurag</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home" data-aos="fade-up">
+      <h1>Hi, I'm Anurag</h1>
+      <p>Frontend Developer | BCA Student</p>
+      <p>I build modern web apps and interactive AI-based projects.</p>
+      <button id="projectBtn">View Projects</button>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+        I am a BCA student and frontend developer passionate about building
+        clean, responsive, and user-friendly web applications. I have worked on
+        projects like a voice-based AI assistant and a smart academic tracker.
+        Currently, I am improving my JavaScript skills and looking for frontend
+        opportunities.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Nova AI Assistant</h3>
+          <p>Voice assistant with memory and smart responses.</p>
+          <div class="buttons">
+            <a href="#">GitHub</a>
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Smart Academic Tracker</h3>
+          <p>Dashboard to track student performance.</p>
+          <div class="buttons">
+            <a href="#">GitHub</a>
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Landing Page</h3>
+          <p>Responsive website using HTML & CSS.</p>
+          <div class="buttons">
+            <a href="#">GitHub</a>
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills" data-aos="fade-up">
+      <h2>Skills</h2>
+      <p>HTML, CSS, JavaScript, Git, GitHub</p>
+    </section>
+
+    <!-- GITHUB STATS -->
+    <section class="github" data-aos="fade-up">
+      <h2>GitHub Stats</h2>
+      <img
+        src="https://github-readme-stats.vercel.app/api?username=Anurag-rana2804&show_icons=true&theme=tokyonight"
+      />
+      <img
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anurag-rana2804&layout=compact&theme=tokyonight"
+      />
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <p>Email: ranaanurag2804@gmail.com</p>
+      <p>GitHub: github.com/Anurag-rana2804</p>
+    </section>
+
+    <footer>
+      <p>© 2026 Anurag. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
