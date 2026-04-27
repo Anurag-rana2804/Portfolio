@@ -1,121 +1,344 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anurag | Portfolio</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="description" content="Anurag - Frontend Developer Portfolio">
+  <meta name="keywords" content="Frontend Developer, Portfolio, Web Developer, Anurag">
+  <meta name="author" content="Anurag">
 
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <title>Anurag | Frontend Developer</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav>
-      <h2>Anurag</h2>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- HERO -->
-    <section class="hero" id="home" data-aos="fade-up">
-      <h1>Hi, I'm Anurag</h1>
-      <p>Frontend Developer | BCA Student</p>
-      <p>I build modern web apps and interactive AI-based projects.</p>
-      <button id="projectBtn">View Projects</button>
-    </section>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- ABOUT -->
-    <section class="about" data-aos="fade-up">
-      <h2>About Me</h2>
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress"></div>
+
+<!-- BACK TO TOP -->
+<button id="backToTop">↑</button>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">Anurag Rana</div>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#timeline">Journey</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+  <div class="hero-bg"></div>
+
+  <div class="hero-content" data-aos="fade-up">
+
+    <p class="tag">Frontend Developer • BCA Student</p>
+
+    <h1>
+      Crafting <span>Bold Digital</span><br>
+      Experiences
+    </h1>
+
+    <p class="subtitle">
+      I build premium web experiences, AI-powered systems,
+      and modern responsive interfaces with powerful design and performance.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="primary-btn">View Projects</a>
+      <a href="resume.pdf" class="secondary-btn">Download Resume</a>
+    </div>
+
+    <div class="social-links">
+      <a href="https://github.com/Anurag-rana2804" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/Anuragrana2804" target="_blank">LinkedIn</a>
+      <a href="mailto:ranaanurag2804@gmail.com">Email</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about" data-aos="fade-up">
+
+  <h2>About Me</h2>
+
+  <p>
+    I am a BCA student and frontend developer focused on creating
+    high-quality, responsive, and visually powerful digital products.
+    My work includes AI assistant systems, dashboard projects,
+    and premium web experiences.
+  </p>
+
+  <div class="stats-grid">
+
+    <div class="stat-card">
+      <h3>10+</h3>
+      <p>Projects Built</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>3+</h3>
+      <p>Major Systems</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>100%</h3>
+      <p>Responsive Focus</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects" data-aos="fade-up">
+
+  <h2>Featured Projects</h2>
+
+  <div class="project-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card featured">
+
+      <span class="project-badge">AI Assistant</span>
+
+      <h3>Nova AI Assistant</h3>
+
       <p>
-        I am a BCA student and frontend developer passionate about building
-        clean, responsive, and user-friendly web applications. I have worked on
-        projects like a voice-based AI assistant and a smart academic tracker.
-        Currently, I am improving my JavaScript skills and looking for frontend
-        opportunities.
+        Jarvis-inspired assistant with wake-word detection,
+        memory system, futuristic dashboard UI,
+        and advanced voice interaction.
       </p>
-    </section>
 
-    <!-- PROJECTS -->
-    <section class="projects" id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
-
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Nova AI Assistant</h3>
-          <p>Voice assistant with memory and smart responses.</p>
-          <div class="buttons">
-            <a href="#">GitHub</a>
-            <a href="#">Live Demo</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3>Smart Academic Tracker</h3>
-          <p>Dashboard to track student performance.</p>
-          <div class="buttons">
-            <a href="#">GitHub</a>
-            <a href="#">Live Demo</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3>Landing Page</h3>
-          <p>Responsive website using HTML & CSS.</p>
-          <div class="buttons">
-            <a href="#">GitHub</a>
-            <a href="#">Live Demo</a>
-          </div>
-        </div>
+      <div class="tech-stack">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
       </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section class="skills" id="skills" data-aos="fade-up">
-      <h2>Skills</h2>
-      <p>HTML, CSS, JavaScript, Git, GitHub</p>
-    </section>
+      <div class="buttons">
+        <a href="#">GitHub</a>
+        <a href="#">Live Demo</a>
+      </div>
 
-    <!-- GITHUB STATS -->
-    <section class="github" data-aos="fade-up">
-      <h2>GitHub Stats</h2>
-      <img
-        src="https://github-readme-stats.vercel.app/api?username=Anurag-rana2804&show_icons=true&theme=tokyonight"
-      />
-      <img
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anurag-rana2804&layout=compact&theme=tokyonight"
-      />
-    </section>
+    </div>
 
-    <!-- CONTACT -->
-    <section class="contact" id="contact" data-aos="fade-up">
-      <h2>Contact Me</h2>
-      <p>Email: ranaanurag2804@gmail.com</p>
-      <p>GitHub: github.com/Anurag-rana2804</p>
-    </section>
+    <!-- Project 2 -->
+    <div class="project-card">
 
-    <footer>
-      <p>© 2026 Anurag. All rights reserved.</p>
-    </footer>
+      <span class="project-badge">Dashboard</span>
 
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({ duration: 1000, once: true });
-    </script>
+      <h3>Smart Academic Tracker</h3>
 
-    <script src="script.js"></script>
-  </body>
+      <p>
+        Academic productivity dashboard with analytics,
+        task systems, and smart student-focused tools.
+      </p>
+
+      <div class="tech-stack">
+        <span>React</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+      </div>
+
+      <div class="buttons">
+        <a href="#">GitHub</a>
+        <a href="#">Live Demo</a>
+      </div>
+
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+
+      <span class="project-badge">Web Design</span>
+
+      <h3>Premium Landing Page</h3>
+
+      <p>
+        Modern responsive landing page with premium design,
+        polished UI, and strong visual hierarchy.
+      </p>
+
+      <div class="tech-stack">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+
+      <div class="buttons">
+        <a href="#">GitHub</a>
+        <a href="#">Live Demo</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills" data-aos="fade-up">
+
+  <h2>Skills & Expertise</h2>
+
+  <div class="skills-grid">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>React</span>
+    <span>Node.js</span>
+    <span>MongoDB</span>
+    <span>Git & GitHub</span>
+    <span>Responsive Design</span>
+    <span>API Integration</span>
+    <span>UI/UX Design</span>
+  </div>
+
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline" id="timeline" data-aos="fade-up">
+
+  <h2>My Journey</h2>
+
+  <div class="timeline-item">
+    <h3>BCA Student</h3>
+    <p>
+      Pursuing BCA while building advanced technical,
+      design, and software development capabilities.
+    </p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>Frontend Developer</h3>
+    <p>
+      Creating responsive websites, premium interfaces,
+      and modern digital experiences.
+    </p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>AI Builder</h3>
+    <p>
+      Developing Nova AI assistant systems
+      with advanced voice, automation, and memory capabilities.
+    </p>
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services" data-aos="fade-up">
+
+  <h2>What I Do</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h3>Frontend Development</h3>
+      <p>
+        Premium websites, dashboards,
+        responsive interfaces, and user systems.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Portfolio Design</h3>
+      <p>
+        Modern professional personal branding websites
+        for developers and creators.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>AI Systems</h3>
+      <p>
+        Smart assistant systems, automation tools,
+        and futuristic dashboard integrations.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GITHUB STATS -->
+<section class="github" data-aos="fade-up">
+
+  <h2>GitHub Performance</h2>
+
+  <img src="https://github-readme-stats.vercel.app/api?username=Anurag-rana2804&show_icons=true&theme=radical" alt="GitHub Stats">
+
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anurag-rana2804&layout=compact&theme=radical" alt="Top Languages">
+
+</section>
+
+<!-- RESUME CTA -->
+<section class="resume-cta" data-aos="zoom-in">
+
+  <h2>Want My Full Resume?</h2>
+
+  <p>
+    Explore my complete technical background,
+    project history, and professional journey.
+  </p>
+
+  <a href="resume.pdf" class="primary-btn">
+    Download Resume
+  </a>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact" data-aos="fade-up">
+
+  <h2>Let's Connect</h2>
+
+  <p>Email: ranaanurag2804@gmail.com</p>
+  <p>GitHub: github.com/Anurag-rana2804</p>
+  <p>LinkedIn: linkedin.com/in/Anuragrana2804</p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Anurag Rana. All rights reserved.</p>
+</footer>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<!-- MAIN JS -->
+<script src="script.js"></script>
+
+</body>
 </html>
